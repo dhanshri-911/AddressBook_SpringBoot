@@ -51,7 +51,7 @@ public class AddressBookController {
     public ResponseEntity<ResponseDTO> removeAddressBookData(@PathVariable int personId) {
         addressBookService.deleteAddressBookData(personId);
         ResponseDTO responseDTO = new ResponseDTO("Data DELETED Successfully!!!",
-                "ID number: " + personId + " DELETED!!!");
+                "ID number: " + personId + " --> DELETED!!!");
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
