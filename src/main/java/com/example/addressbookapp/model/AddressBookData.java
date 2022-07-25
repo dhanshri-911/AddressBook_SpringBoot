@@ -5,6 +5,8 @@ import com.example.addressbookapp.dto.AddressBookDTO;
 import lombok.Data;
 
     @Data
+    //Added Lombok Library for setter getter
+
     public class AddressBookData {
         private int personId;
         private String firstName;
