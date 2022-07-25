@@ -1,0 +1,30 @@
+2022-2022-07 00:34 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 17.0.2 on LAPTOP-661IS5UO with PID 30092 (C:\Development\SpringProject\AddressBookApp\target\classes started by Dhanshri in C:\Development\SpringProject\AddressBookApp)
+2022-2022-07 00:34 [DEBUG][restartedMain][c.e.a.AddressBookAppApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 00:34 [INFO][restartedMain][c.e.a.AddressBookAppApplication:634] No active profile set, falling back to 1 default profile: "default"
+2022-2022-07 00:34 [ERROR][restartedMain][o.a.c.c.AprLifecycleListener:173] An incompatible version [1.1.33] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2022-2022-07 00:34 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 00:34 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-2022-07 00:34 [WARN][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:61] Unable to start LiveReload server
+2022-2022-07 00:34 [WARN][restartedMain][o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-2022-07 00:34 [ERROR][restartedMain][o.s.b.d.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-2022-07 00:35 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 17.0.2 on LAPTOP-661IS5UO with PID 30628 (C:\Development\SpringProject\AddressBookApp\target\classes started by Dhanshri in C:\Development\SpringProject\AddressBookApp)
+2022-2022-07 00:35 [DEBUG][restartedMain][c.e.a.AddressBookAppApplication:56] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-2022-07 00:35 [INFO][restartedMain][c.e.a.AddressBookAppApplication:634] No active profile set, falling back to 1 default profile: "default"
+2022-2022-07 00:35 [ERROR][restartedMain][o.a.c.c.AprLifecycleListener:173] An incompatible version [1.1.33] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2022-2022-07 00:35 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-07 00:35 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-2022-07 00:35 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 3.294 seconds (JVM running for 4.337)
+2022-2022-07 00:35 [INFO][restartedMain][c.e.a.AddressBookAppApplication:13] Address Book Application Started!!!
