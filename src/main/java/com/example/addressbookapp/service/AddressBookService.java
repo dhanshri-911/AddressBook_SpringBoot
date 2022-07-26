@@ -9,7 +9,17 @@ import java.util.List;
 
 @Service
 public class AddressBookService {
-    List<AddressBookData> addressBookDataList = new ArrayList<>();
+
+//    @Autowired
+//    ModelMapper mapper;
+//    @Autowired
+//     AddressBookRepo addressBookRepo;
+//
+//    public AddressBookService(AddressBookRepo addressBookRepo,ModelMapper mapper){
+//        this.addressBookRepo=addressBookRepo;
+//        this.mapper= mapper;
+//    }
+      List<AddressBookData> addressBookDataList = new ArrayList<>();
 
     public List<AddressBookData> getAddressBookData() {
         return addressBookDataList;
