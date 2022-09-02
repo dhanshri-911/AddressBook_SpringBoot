@@ -5,6 +5,7 @@ import com.example.addressbookapp.dto.ResponseDTO;
 import com.example.addressbookapp.exception.AddressBookException;
 import com.example.addressbookapp.model.AddressBookData;
 import com.example.addressbookapp.repository.AddressBookRepo;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,8 @@ public class AddressBookService {
 
     @Autowired
     AddressBookRepo addressBookRepo;
+    @Autowired
+    private ModelMapper modelMapper;
 
     public List<AddressBookData> getAddressBookData() {
         return addressBookRepo.findAll();
@@ -28,14 +31,16 @@ public class AddressBookService {
     }
 
     public AddressBookData addAddressBookData(AddressBookDTO addressBookDTO) {
-        AddressBookData addressBookData = new AddressBookData(addressBookDTO);
-        addressBookRepo.save(addressBookData);
-        return addressBookData;
+        // AddressBookData addressBookData = new AddressBookData(addressBookDTO);
+        AddressBookData addressBookData = modelMapper.map(addressBookDTO, AddressBookData.class);
+        return addressBookRepo.save(addressBookData);
+
     }
 
     public AddressBookData editAddressBookData(int personId, AddressBookDTO addressBookDTO) {
         AddressBookData addressBookData = this.getAddressBookById(personId);
-        addressBookData.updateData(addressBookDTO);
+        // addressBookData.updateData(addressBookDTO);
+        modelMapper.map(addressBookDTO, addressBookData);
         return addressBookRepo.save(addressBookData);
     }
 
