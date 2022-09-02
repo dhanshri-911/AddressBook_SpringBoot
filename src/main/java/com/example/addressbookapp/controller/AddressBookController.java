@@ -3,6 +3,8 @@ package com.example.addressbookapp.controller;
 import com.example.addressbookapp.dto.AddressBookDTO;
 import com.example.addressbookapp.dto.ResponseDTO;
 import com.example.addressbookapp.model.AddressBookData;
+//import com.example.addressbookapp.model.AuthenticationRequest;
+//import com.example.addressbookapp.model.AuthenticationResponse;
 import com.example.addressbookapp.service.AddressBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,12 +12,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/addressbook")
 public class AddressBookController {
     @Autowired
     AddressBookService addressBookService;
+
+    @Autowired
+    //AuthenticationRequest authenticationRequest;
 
 
     @GetMapping(value = {"/get"})
@@ -70,3 +75,5 @@ public class AddressBookController {
     }
 
 }
+
+

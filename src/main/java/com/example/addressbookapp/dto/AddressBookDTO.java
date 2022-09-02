@@ -7,6 +7,7 @@ import javax.validation.constraints.Pattern;
 @AllArgsConstructor
 
 public class AddressBookDTO {
+
     @Pattern(regexp = "^[A-Z]{1}[A-Za-z]{1,}$", message = "Invalid First Name")
     public String firstName;
 
@@ -30,6 +31,9 @@ public class AddressBookDTO {
 
     @Pattern(regexp = "^[A-Z]{1}[a-z]{1,}$", message = "Invalid State Name")
     public String state;
+
+    public String password;
+    public String username;
 
 //    public AddressBookDTO(String firstName, String lastName, String phoneNumber, String email,
 //                          String address, String city, String state, int zip) {
